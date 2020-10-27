@@ -17,4 +17,18 @@ Examples:
 """
 def XO(txt):
     # Your code here
+    # figure out the "x"s and "o"s in the input string either by 
+        # counting each or
+        # using dict  ?
+    # check if the nums are the same
+    # return true if they are
+    xs = 0
+    os = 0
+    for i in txt:
+        if i.lower() is "x":
+            xs += 1
+        elif i.lower() is "o":
+            os += 1 
+        return xs == os
 
+print(XO("ooxXm"))
